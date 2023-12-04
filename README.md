@@ -1,6 +1,6 @@
 # New place
 Ensure that docker is already installed and running in your environment
-# Follow the steps to clone and run the project on dicjer
+# Follow the steps to clone and run the project on docker 
 
 ## Step 1
 ```git clone git@github.com/umairabbasDev:new_place.git```
