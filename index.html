@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" id="favicon" href="/assets/favicon-white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const usesDarkMode = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const favicon = document.getElementById("favicon");
+
+      function switchIcon(isDarkMode) {
+        if (isDarkMode) {
+          favicon.href = "/assets/favicon-light.png";
+        } else {
+          favicon.href = "/assets/favicon-dark.png";
+        }
+      }
+
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", (e) => {
+          switchIcon(e.matches);
+        });
+
+      switchIcon(usesDarkMode);
+    </script>
+    <title>New place</title>
+  </head>
+  <body class="overflow-auto slim-scroll">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
