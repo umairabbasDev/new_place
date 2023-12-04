@@ -6,7 +6,7 @@ Ensure that docker is already installed and running in your environment
 ```git clone git@github.com/umairabbasDev:new_place.git```
 
 ## step 2 
-- rename the .envcopy file to .env
+- rename the .env copy file to .env
 - make sure to add api keys in .env
 
 ## Step 3
